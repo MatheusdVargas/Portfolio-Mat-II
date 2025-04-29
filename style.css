@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+:root {
+    --cor01: #13293D;
+    --cor02: #16324F;
+}
+body {
+    background-color: white;
+    margin: 0;;
+}
+header {
+    background-color: var(--cor02);
+}
+#logo {
+    padding: 10px;
+    width: 60px;
+}
+header > h1 {
+    font-family: "Garamond", serif;
+    font-weight: lighter;
+    font-size: 3em;
+    color: white;
+    padding: 5px;
+    display: inline;
+    position: relative;
+    bottom: 43px;
+    left: 10px
+
+}
+#github {
+    width: 70px;
+    position: absolute;
+    right: 10px;
+    top: 23px;
+}
+section {
+    margin: 55px;
+    display: inline;
+}
+#titulo {
+    margin-left: 5%;
+    padding: 20px 0;
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    font-size: 4em;
+    color: var(--cor02);
+}
+#container_anos {
+    background-color: var(--cor01);
+    color: white;
+    width: 500px;
+    border-radius: 5px;
+    margin-left: 4%;
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+#anos {
+    margin: 0 10px;
+    background-color: var(--cor02);
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+aside {
+    display: inline;
+    right: 15%;
+    top: 27%;
+    max-width: 400px;
+}
