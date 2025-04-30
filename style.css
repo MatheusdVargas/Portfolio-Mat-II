@@ -3,6 +3,10 @@
     --cor01: #13293D;
     --cor02: #16324F;
 }
+html {
+    scrollbar-color: var(--cor02) var(--cor01);
+    scrollbar-width: thin;
+}
 body {
     background-color: white;
     margin: 0;;
@@ -51,6 +55,7 @@ section {
     border-radius: 5px;
     margin-left: 4%;
     padding: 20px 0;
+    margin-bottom: 15px;
     font-size: 1.5em;
 }
 #anos {
@@ -67,9 +72,32 @@ a {
 a:hover {
     text-decoration: underline;
 }
+hr {
+    color: #3E92CC;
+}
 aside {
     display: inline;
-    right: 15%;
-    top: 27%;
     max-width: 400px;
+    position: absolute;
+    top: 22%;
+    right: 10%;
+
+}
+aside > img {
+    width: 400px;
+    border-radius: 50%;
+}
+footer {
+    background-color: var(--cor01);
+    color: white;
+    font-family: "Garamond", serif;
+    line-height: 20px;
+    padding: 30px;
+    bottom: 0;
+}
+footer > h2 {
+    font-family: "Garamond", serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-size: 1.5em;
 }
