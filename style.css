@@ -8,8 +8,8 @@ html {
     scrollbar-width: thin;
 }
 body {
-    background-color: white;
-    margin: 0;;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/004/827/521/large/technology-network-background-free-video.jpg");
+    margin: 0;
 }
 header {
     background-color: var(--cor02);
@@ -37,6 +37,7 @@ header > h1 {
     top: 23px;
 }
 section {
+    background-color: transparent;
     margin: 55px;
     display: inline;
 }
