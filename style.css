@@ -8,7 +8,8 @@ html {
     scrollbar-width: thin;
 }
 body {
-    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/004/827/521/large/technology-network-background-free-video.jpg");
+    background-image: url("video2.gif");
+    background-size: cover;
     margin: 0;
 }
 header {
