@@ -8,7 +8,7 @@ html {
     scrollbar-width: thin;
 }
 body {
-    background-image: url("video2.gif");
+    background-image: url("../imagens/fundo.gif");
     background-size: cover;
     margin: 0;
 }
@@ -48,7 +48,7 @@ section {
     padding: 20px 0;
     font-family: "Garamond", serif;
     font-weight: bold;
-    text-shadow: rgba(0, 0, 0, 0.699) 0.5px 0.5px 3px;
+    text-shadow: 1px 1px 2px black;
     font-size: 4em;
     color: var(--cor02);
 }
@@ -74,6 +74,7 @@ section {
     text-decoration: none;
     color: white;
     position: relative;
+    display: inline;
     transition: color 0.3s ease;
 }
 
@@ -101,14 +102,7 @@ section {
 hr {
     color: #3E92CC;
 }
-aside {
-    display: inline;
-    max-width: 400px;
-    position: absolute;
-    top: 22%;
-    right: 10%;
 
-}
 aside > img {
     width: 400px;
     border-radius: 50%;
@@ -124,6 +118,7 @@ footer {
 footer > h2 {
     font-family: "Garamond", serif;
     font-weight: bold;
+    text-shadow: 1px 1px 2px black;
     padding-bottom: 15px;
     font-size: 1.5em;
 }

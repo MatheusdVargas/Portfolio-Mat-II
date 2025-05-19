@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginasCont.css">
+    <title>Estátistica Básica</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="imagens/logo.png" alt="logo"></a>
+        <h1>Portfólio de Matemática</h1>
+        <a href="https://github.com/MatheusdVargas" target="_blank"><img id="github"
+                src="https://freepnglogo.com/images/all_img/github-logo-white-stroke-2a6c.png" alt="github"></a>
+    </header>
+    <section>
+        <div id="titulo">Estatística Básica</div>
+    </section>
+    <article>
+        <h2>O que é?</h2>
+        <p>
+            A estátistica é um ramo da matemática que estuda a coleta, organização, análise e interpretação de dados. No
+            ensino médio estudamos a estátistica descritiva, que é a parte da estatística que estuda como resumir a
+            pesquisa com tabelas e gráficos. Também existe a estátistica inferencial, que só é estudada no ensino
+            superior.
+        </p>
+        <h2>Termos da estatística</h2>
+        <p>
+        <ul>
+            <li>População: é o conjunto de todos os elementos que estão sob análise.</li>
+            <li>Amostra: parte da população.</li>
+            <li>Pesquisa Qualitativa: é uma pesquisa com foco em qualidade, preferencias do analisado. Normalmente é
+                dado em forma de texto.</li>
+            <li>Pesquisa Quantitativa: é uma pesquisa com foco em quantidade, normalmente é dado em forma de números.
+            </li>
+            <li>Frequencia Absoluta: é o número de vezes que um valor aparece em uma pesquisa.</li>
+            <li>Frequencia Relativa: é a frequencia absoluta dividido pelo número de elementos da amostra.</li>
+            <li>Frequência de Classes: número de vezes que um intervalo de valores aparece num conjunto de dados. É dado
+                por um intervalo aberto-fechado, ou seja, se tivermos 3|-5 nossa classe começa em 3 e termina em 4,9.
+            </li>
+        </ul>
+        <h2>Média Aritmética Simples</h2>
+        <p>
+            É a média básica que aprentemos no fundamental, é dada pela soma dos elementos, dividido pela quantidade de
+            elementos. Na formula: xi = dado, n = quantidade de dados.<br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow>
+                    <mfrac>
+                        <mrow>
+                            <munderover>
+                                <mo>&#x2211;</mo>
+                                <mrow>
+                                    <mi>i</mi>
+                                    <mo>=</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mi>n</mi>
+                            </munderover>
+                            <msub>
+                                <mi>x</mi>
+                                <mi>i</mi>
+                            </msub>
+                        </mrow>
+                        <mi>n</mi>
+                    </mfrac>
+                </mrow>
+            </math>
+        </p>
+        <h2>Média Ponderada</h2>
+        <p>
+            Similar a média aritmética simples, porém apresenta pesos. Nessa média multiplicamos o dado pelo peso e
+            dividimos pela soma dos pesos.
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow>
+                    <mfrac>
+                        <mrow>
+                            <munderover>
+                                <mo>&#x2211;</mo>
+                                <mrow>
+                                    <mi>i</mi>
+                                    <mo>=</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mi>n</mi>
+                            </munderover>
+                            <mrow>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mi>i</mi>
+                                </msub>
+                                <mo>&InvisibleTimes;</mo>
+                                <msub>
+                                    <mi>p</mi>
+                                    <mi>i</mi>
+                                </msub>
+                            </mrow>
+                        </mrow>
+                        <mrow>
+                            <munderover>
+                                <mo>&#x2211;</mo>
+                                <mrow>
+                                    <mi>i</mi>
+                                    <mo>=</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mi>n</mi>
+                            </munderover>
+                            <msub>
+                                <mi>p</mi>
+                                <mi>i</mi>
+                            </msub>
+                        </mrow>
+                    </mfrac>
+                </mrow>
+            </math>
+        </p>
+        <h2>Moda e Mediana</h2>
+        <p>
+        <ul>
+            <li>Moda: Termo que mais aparece em uma sequencia de dados.</li>
+            <li>Mediana: Termo do meio de uma sequencia de dados. Na mediana é obrigado a organizar os dados em ordem
+                crescente ou decrescente. Se o numero de dados for ímpar a mediana é o termo "do meio". Se o numero de
+                dados é par, temos que fazer a média dos dois dados do meio.</li>
+        </ul>
+        </p>
+        <h2>Exercício Exemplo</h2>
+        <p>Calcule a média ponderada, mediana e moda dos dados fornecidos abaixo:</p>
+        <img src="imagens/exercicioEst01.png" alt="">
+        <p>Fonte: Adaptado do material da professora Valéria Espindola Lessa.</p> <br>
+        <p>Para a média ponderada temos que multiplicar cada dado pelo seu peso e dividir pela soma dos pesos:
+            <!-- Ponto médio e produtos -->
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mtable columnalign="left">
+                    <mtr>
+                        <mtd>
+                            <mi>x_1</mi> = <mfrac>
+                                <mrow>
+                                    <mn>150</mn>
+                                    <mo>+</mo>
+                                    <mn>154</mn>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac> = <mn>152</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>f_1</mi> = <mn>4</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>x_1</mi>
+                            <mo>&#x00D7;</mo>
+                            <mi>f_1</mi> = <mn>152</mn>
+                            <mo>&#x00D7;</mo>
+                            <mn>4</mn> = <mn>608</mn>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mi>x_2</mi> = <mfrac>
+                                <mrow>
+                                    <mn>154</mn>
+                                    <mo>+</mo>
+                                    <mn>158</mn>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac> = <mn>156</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>f_2</mi> = <mn>9</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>x_2</mi>
+                            <mo>&#x00D7;</mo>
+                            <mi>f_2</mi> = <mn>156</mn>
+                            <mo>&#x00D7;</mo>
+                            <mn>9</mn> = <mn>1404</mn>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mi>x_3</mi> = <mfrac>
+                                <mrow>
+                                    <mn>158</mn>
+                                    <mo>+</mo>
+                                    <mn>162</mn>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac> = <mn>160</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>f_3</mi> = <mn>11</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>x_3</mi>
+                            <mo>&#x00D7;</mo>
+                            <mi>f_3</mi> = <mn>160</mn>
+                            <mo>&#x00D7;</mo>
+                            <mn>11</mn> = <mn>1760</mn>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mi>x_4</mi> = <mfrac>
+                                <mrow>
+                                    <mn>162</mn>
+                                    <mo>+</mo>
+                                    <mn>166</mn>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac> = <mn>164</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>f_4</mi> = <mn>8</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>x_4</mi>
+                            <mo>&#x00D7;</mo>
+                            <mi>f_4</mi> = <mn>164</mn>
+                            <mo>&#x00D7;</mo>
+                            <mn>8</mn> = <mn>1312</mn>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mi>x_5</mi> = <mfrac>
+                                <mrow>
+                                    <mn>166</mn>
+                                    <mo>+</mo>
+                                    <mn>170</mn>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac> = <mn>168</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>f_5</mi> = <mn>5</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>x_5</mi>
+                            <mo>&#x00D7;</mo>
+                            <mi>f_5</mi> = <mn>168</mn>
+                            <mo>&#x00D7;</mo>
+                            <mn>5</mn> = <mn>840</mn>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                            <mi>x_6</mi> = <mfrac>
+                                <mrow>
+                                    <mn>170</mn>
+                                    <mo>+</mo>
+                                    <mn>174</mn>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac> = <mn>172</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>f_6</mi> = <mn>3</mn>
+                        </mtd>
+                        <mtd>
+                            <mi>x_6</mi>
+                            <mo>&#x00D7;</mo>
+                            <mi>f_6</mi> = <mn>172</mn>
+                            <mo>&#x00D7;</mo>
+                            <mn>3</mn> = <mn>516</mn>
+                        </mtd>
+                    </mtr>
+                </mtable>
+            </math>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow>
+                    <mfrac>
+                        <mrow>
+                            <munderover>
+                                <mo>&#x2211;</mo>
+                                <mrow>
+                                    <mi>i</mi>
+                                    <mo>=</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mi>n</mi>
+                            </munderover>
+                            <mrow>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mi>i</mi>
+                                </msub>
+                                <mo>&InvisibleTimes;</mo>
+                                <msub>
+                                    <mi>p</mi>
+                                    <mi>i</mi>
+                                </msub>
+                            </mrow>
+                        </mrow>
+                        <mrow>
+                            <munderover>
+                                <mo>&#x2211;</mo>
+                                <mrow>
+                                    <mi>i</mi>
+                                    <mo>=</mo>
+                                    <mn>1</mn>
+                                </mrow>
+                                <mi>n</mi>
+                            </munderover>
+                            <msub>
+                                <mi>p</mi>
+                                <mi>i</mi>
+                            </msub>
+                        </mrow>
+                    </mfrac>
+                </mrow>
+            </math>
+        <p id="seta">↓</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow>
+                    <mfrac>
+                        <mn>6440</mn>
+                        <mn>40</mn>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mn>161</mn>
+                </mrow>
+            </math>
+        </p>
+        <p>Logo, temos que a média ponderada é 161cm. Para a mediana, temos que encontrar o numero do meio. A sequencia já está em ordem crescente, então não precisamos organizar. Temos como total de elementos a soma dos fi:</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mrow>
+              <mi>n</mi> = <mn>40</mn>
+            </mrow>
+          </math>
+        </p>
+        <p>Como metade do total temos: </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow>
+                  <mfrac><mi>n</mi><mn>2</mn></mfrac> = <mfrac><mn>40</mn><mn>2</mn></mfrac> = <mn>20</mn>
+                </mrow>
+            </math>
+        </p>
+        <p>Agora precisamos da frequencia acumulada de cada classe:</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mtable columnalign="left">
+                  <mtr><mtd>150–154: <mn>4</mn></mtd></mtr>
+                  <mtr><mtd>154–158: <mn>4</mn> <mo>+</mo> <mn>9</mn> = <mn>13</mn></mtd></mtr>
+                  <mtr><mtd>158–162: <mn>13</mn> <mo>+</mo> <mn>11</mn> = <mn>24</mn></mtd></mtr>
+                </mtable>
+              </math>
+        </p>
+        <p>
+            Pegamos a maior frequencia acumulada que é 24 e vemos que o elemento do meio é uma classe de 158|–162. Então a mediana é 160cm, média entre 158 e 162.
+        </p>
+        <p><br>Agora para a moda temos: A frequencia que mais se repete é a 158|-162, logo nossa moda está ali. Fazendo a média entre 158 e 162 novamente temos que nossa moda é igual a mediana, 160.</p>
+        <a href="medDisp.html" class="link"><br>>>Proximo Conteúdo</a>
+        <a href="conteudos2ano.html" class="link"><br>>>Página de Conteúdos</a>
+    </article>
+    <footer>
+        <h2>Contato</h2>
+        <p>E-mail: <a href="mailto:2024302557@aluno.erechim.ifrs.edu.br">2024302557@aluno.erechim.ifrs.edu.br</a></p>
+        <p>Telefone: (54) 9673-2076</p>
+        <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Campus Erechim</p>
+        <p>Desenvolvido por Matheus Vargas</p>
+    </footer>
+</body>
+
+</html>

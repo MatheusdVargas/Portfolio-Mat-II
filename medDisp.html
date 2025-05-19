@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginasCont.css">
+    <title>Medidas de Dispersão</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="imagens/logo.png" alt="logo"></a>
+        <h1>Portfólio de Matemática</h1>
+        <a href="https://github.com/MatheusdVargas" target="_blank"><img id="github"
+                src="https://freepnglogo.com/images/all_img/github-logo-white-stroke-2a6c.png" alt="github"></a>
+    </header>
+    <section>
+        <div id="titulo">Estatística Básica -<br>Medidas de Dispersão</div>
+    </section>
+    <article>
+        <p>
+            Medida de dispersão é uma forma de medir o quanto um dado foge da média. Esse assunto é muito importante
+            para o ENEM, porém normalmente é cobrado por meio de lógica e não por contas.
+        </p>
+        <h2>Amplitude total</h2>
+        <p>É a medida mais simples de todas, basta subtrair o maior dado do menor dado.</p>
+        <h2>Desvio médio</h2>
+        <p>É como se fosse uma amplitude total, mas subtrai-se o dado (xi) da média (M) e divide-se pelo numero de dados
+            (n). É como uma combinação de amplitude total com media aritmética simples, veja: </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>DM</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mo>&#x2211;</mo>
+                        <mo>|</mo>
+                        <msub>
+                            <mi>x</mi>
+                            <mi>i</mi>
+                        </msub>
+                        <mo>&#x2212;</mo>
+                        <mi>M</mi>
+                        <mo>|</mo>
+                    </mrow>
+                    <mrow>
+                        <mo>&#x2211;</mo>
+                        <mi>n</mi>
+                    </mrow>
+                </mfrac>
+            </math>
+        </p>
+        <h2>Variância</h2>
+        <p>
+            Variância é a média dos quadrados dos desvios médios, ou seja, é a mesma fórmula dos desvios médios mas ao
+            quadrado. Então pode ser escrita assim:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>&#x0394;</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mo>&#x2211;</mo>
+                        <msup>
+                            <mrow>
+                                <mo>(</mo>
+                                <msub>
+                                    <mi>x</mi>
+                                    <mi>i</mi>
+                                </msub>
+                                <mo>&#x2212;</mo>
+                                <mi>M</mi>
+                                <mo>)</mo>
+                            </mrow>
+                            <mn>2</mn>
+                        </msup>
+                    </mrow>
+                    <mi>n</mi>
+                </mfrac>
+            </math>
+        </p>
+        <p>
+            Normalmente, não utilizamos a resposta da questão como a variância, pois ela apresenta uma unidade de medida
+            ao quadrado, por exemplo, se os dados estiverem em metros, a variância estará em metros quadrados. Para
+            resolver isso, tiramos a raiz quadrada da variância, obtendo o desvio padrão.
+        </p>
+        <h2>Desvio Padrão</h2>
+        <p>
+            É simplesmente a raiz quadrada da variância.
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>DP</mi>
+                <mo>=</mo>
+                <msqrt>
+                    <mi>&#x0394;</mi>
+                </msqrt>
+            </math>
+        </p>
+        <p>
+            Agora a unidade de medida não está mais ao quadrado, o que significa que podemos utilizá-la para comparar os
+            desvios dos dados.
+        </p>
+        <h2>Coeficiente de Variação</h2>
+        <p>
+            O coeficiente de variação surge como uma forma de transformar o desvio padrão em uma porcentagem, para que
+            possamos comparar os desvios de dados que possuem unidades de medida diferentes. Podemos calcular o
+            coeficiente de variação dividindo o desvio padrão pela média, assim:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>CV</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mi>DP</mi>
+                    <mover>
+                        <mi>M</mi>
+                    </mover>
+                </mfrac>
+                <mo>&#x00D7;</mo>
+                <mn>100</mn>
+            </math>
+        </p>
+        <h2>Exercícios de Exemplo</h2>
+        <h3>Questão 1</h3>
+        <img src="imagens/exercicioMed01.png" alt="">
+        <p>
+            Fonte:
+            <a href="https://exercicios.mundoeducacao.uol.com.br/exercicios-matematica/exercicios-sobre-desvio-padrao.htm#questao-10053" class="link">https://exercicios.mundoeducacao.uol.com.br/exercicios-matematica/exercicios-sobre-desvio-padrao.htm#questao-10053</a>
+        </p> <br>
+        <p>
+            Nesta questão basta analizarmos os dados fornecidos pela tabela e pelo enunciado. O critério de desempate é
+            o quão homogêneo as notas foram, logo a mediana não é um critério de desempate, por isso podemos eliminar a
+            alternativas A e D. Similar a isso, a nota em portugues não é um critério de desempate, então podemos
+            eliminar a alternativa C. Sobraram as alternativas B e E, analisando os dados, vemos que a nota mais
+            homogênea é a de Marcos, pois ela é quase 0. Logo a alternativa correta é a letra B.
+        </p>
+        <h3>Questão 2</h3>
+        <img src="imagens/exercicioMed02.png" alt="">
+        <p>
+            Fonte:
+            <a href="https://exercicios.mundoeducacao.uol.com.br/exercicios-matematica/exercicios-sobre-desvio-padrao.htm#questao-10053" class="link">https://exercicios.mundoeducacao.uol.com.br/exercicios-matematica/exercicios-sobre-desvio-padrao.htm#questao-10053</a>
+        </p> <br>
+        <p>
+            Se a variância X é 0,81, logo o desvio-padrão de X é a raiz quadrada de 0,81. Logo, &radic;0,81 = 0,9<br>
+            Parecido com isso a variância Y é 0,64 e o desvio padrão será &radic;0,64, que é 0,8.<br>
+            Com essas informações, podemos eliminar as alternativas A, D e E. Na alternativa C, temos: 0,9 - 0,8, pois a
+            alternativa fala da diferença do desvio padrão e não da variancia, caso fosse a diferença da variância, aí
+            sim essa alternativa estaria correta.<br>
+            Nesse caso, só nos falta a alternativa B, que é a correta.
+        </p>
+        <h3>Questão 3</h3>
+        <p>Calcule: desvio médio, variância, desvio padrão e coeficiente de variação dos dados apresentados na tabela.
+        </p>
+        <img src="imagens/exercicioMed03.png" alt="">
+        <p>
+            Fonte: Adaptado do material da professora Valéria Espindola Lessa.
+        </p> <br>
+        <p>Classes médias:</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow>
+                  <mspace width="1em"/>
+                  <mfrac>
+                    <mrow><mn>1.64</mn> <mo>+</mo> <mn>1.70</mn></mrow>
+                    <mn>2</mn>
+                  </mfrac>
+                  <mo>=</mo>
+                  <mn>1.67</mn>
+                </mrow>
+                <mrow>
+                  <mspace width="1em"/>
+                  <mfrac>
+                    <mrow><mn>1.70</mn> <mo>+</mo> <mn>1.76</mn></mrow>
+                    <mn>2</mn>
+                  </mfrac>
+                  <mo>=</mo>
+                  <mn>1.73</mn>
+                </mrow>
+                <mrow>
+                  <mspace width="1em"/>
+                  <mfrac>
+                    <mrow><mn>1.76</mn> <mo>+</mo> <mn>1.82</mn></mrow>
+                    <mn>2</mn>
+                  </mfrac>
+                  <mo>=</mo>
+                  <mn>1.79</mn>
+                </mrow>
+              </math>
+              
+        </p>
+        <p>
+            Calculo da Média:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mover>
+                    <mi>M</mi>
+                </mover>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mo>&#x2211;</mo>
+                        <msub>
+                            <mi>f</mi>
+                            <mi>i</mi>
+                        </msub>
+                        <mo>&#x22C5;</mo>
+                        <msub>
+                            <mi>x</mi>
+                            <mi>i</mi>
+                        </msub>
+                    </mrow>
+                    <mrow>
+                        <mo>&#x2211;</mo>
+                        <msub>
+                            <mi>f</mi>
+                            <mi>i</mi>
+                        </msub>
+                    </mrow>
+                </mfrac>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mn>7</mn>
+                        <mo>&#x22C5;</mo>
+                        <mn>1.67</mn>
+                        <mo>+</mo>
+                        <mn>9</mn>
+                        <mo>&#x22C5;</mo>
+                        <mn>1.73</mn>
+                        <mo>+</mo>
+                        <mn>4</mn>
+                        <mo>&#x22C5;</mo>
+                        <mn>1.79</mn>
+                    </mrow>
+                    <mrow>
+                        <mo>20</mo>
+                    </mrow>
+                </mfrac>
+                <mo>=</mo>
+                <mfrac>
+                    <mn>34.42</mn>
+                    <mn>20</mn>
+                </mfrac>
+                <mo>=</mo>
+                <mn>1.721</mn>
+            </math>
+
+        </p>
+        <p>Desvio médio aplicando a fórmula:</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>DM</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mo>&#x2211;</mo>
+                        <mo>|</mo>
+                        <msub>
+                            <mi>x</mi>
+                            <mi>i</mi>
+                        </msub>
+                        <mo>&#x2212;</mo>
+                        <mover>
+                            <mi>M</mi>
+                        </mover>
+                        <mo>|</mo>
+                    </mrow>
+                    <mi>n</mi>
+                </mfrac>
+
+
+                <mo>=</mo>
+                <mfrac>
+                    <mn>0.732</mn>
+                    <mn>20</mn>
+                </mfrac>
+                <mo>=</mo>
+                <mn>0.0366</mn>
+            </math>
+        </p>
+        <p>Variância:</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>&#x0394;</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mn>7</mn>
+                        <mo>&#x22C5;</mo>
+                        <msup>
+                            <mrow>
+                                <mo>(</mo>
+                                <mn>1.67</mn>
+                                <mo>-</mo>
+                                <mn>1.721</mn>
+                                <mo>)</mo>
+                            </mrow>
+                            <mn>2</mn>
+                        </msup>
+                        <mo>+</mo>
+                        <mn>9</mn>
+                        <mo>&#x22C5;</mo>
+                        <msup>
+                            <mrow>
+                                <mo>(</mo>
+                                <mn>1.73</mn>
+                                <mo>-</mo>
+                                <mn>1.721</mn>
+                                <mo>)</mo>
+                            </mrow>
+                            <mn>2</mn>
+                        </msup>
+                        <mo>+</mo>
+                        <mn>4</mn>
+                        <mo>&#x22C5;</mo>
+                        <msup>
+                            <mrow>
+                                <mo>(</mo>
+                                <mn>1.79</mn>
+                                <mo>-</mo>
+                                <mn>1.721</mn>
+                                <mo>)</mo>
+                            </mrow>
+                            <mn>2</mn>
+                        </msup>
+                    </mrow>
+                    <mn>20</mn>
+                </mfrac>
+                <mo>=</mo>
+                <mn>0.00214</mn>
+            </math>
+        </p>
+        <p>Desvio Padrão: </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>DP</mi>
+                <mo>=</mo>
+                <msqrt>
+                    <mn>0.00214</mn>
+                </msqrt>
+                <mo>=</mo>
+                <mn>0.0463</mn>
+            </math>
+        </p>
+        <p>Coeficiente de Variação:</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>CV</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mn>0.0463</mn>
+                    <mn>1.721</mn>
+                </mfrac>
+                <mo>&#x00D7;</mo>
+                <mn>100</mn>
+                <mo>%</mo>
+                <mo>=</mo>
+                <mn>2.69</mn>
+                <mo>%</mo>
+            </math>
+        </p>
+        <a href="matrizes.html" class="link"><br>>>Proximo Conteúdo</a>
+        <a href="conteudos2ano.html" class="link"><br>>>Página de Conteúdos</a>
+    </article>
+    <footer>
+        <h2>Contato</h2>
+        <p>E-mail: <a href="mailto:2024302557@aluno.erechim.ifrs.edu.br">2024302557@aluno.erechim.ifrs.edu.br</a></p>
+        <p>Telefone: (54) 9673-2076</p>
+        <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Campus Erechim</p>
+        <p>Desenvolvido por Matheus Vargas</p>
+    </footer>
+</body>
+
+</html>
