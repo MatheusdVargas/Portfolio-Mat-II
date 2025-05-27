@@ -25,7 +25,7 @@
     <article>
         <h2>O que é?</h2>
         <p>
-            Determinantes são uma forma de representar uma tabela por apenas um número. Porém, isso só pode ser fieto em
+            Determinante é uma forma de representar uma matriz por apenas um número. Porém, isso só pode ser fieto em
             raizes quadradas (matrizes que apresentam mesmo número de linhas e colunas). Podemos representar um
             determinante colocando a matriz entre | | ou det(A).
         </p>
@@ -119,8 +119,8 @@
         <p>
             Agora as coisas complicam um pouco, para calcularmos uma matriz 3x3 precisamos de um pouco mais de trabalho.
             Primeiro, devemos repetir as duas primeiras colunas à direita da matriz. Depois, devemos multiplicar os
-            elementos da diagonal principal e somar os resultados. Por fim, devemos multiplicar os elementos da diagonal
-            secundária e subtrair os resultados. Ex:
+            elementos da diagonal principal (eaquerda para direita) e somar os resultados. Por fim, devemos multiplicar os elementos da diagonal
+            secundária (direita para esquerda) e somar os resultados, depois fazemos o resultado da diagonal principal menos o da secundária. Ex:
         </p>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF1g2v1-aTh2Pvikjx9Xe5464ragcKDuwH2A&s" alt="">
         <p>
@@ -141,7 +141,7 @@
             Aqui é o ponto mais complicado dessa matéria. Para calcular os determinantes de matrizes 4x4, 5x5, etc...
             Devemos usar a Regra de Chió, que consiste em: Deixar o primeiro elemento da matriz (a11) valendo um, traçar
             um risco horizontal e vertical, como se estivessimos colocando os elementos da primeira linha e coluna em
-            evidencia e,por fim, fazer o número de dentro da matriz 3x3 criada menos o produto do numero de cima da
+            evidencia e, por fim, fazer o número de dentro da matriz 3x3 criada menos o produto do numero de cima da
             coluna pelo do lado da linha. Ex:
         </p>
         <img src="imagens/exMat4x42.jpg" alt="">
@@ -160,7 +160,7 @@
         <ul>
             <li><br>1. Quando temos uma fila (linha ou coluna) zerada numa matriz, seu
 determinante será zero.</li>
-            <li><br>2. Quando temos duas filas paralelas iguais (ou proporcionais) numa matriz, seu
+            <li><br>2. Quando temos duas filas paralelas iguais numa matriz, seu
 determinante será zero.</li>
             <li><br>3. Quando temos duas filas paralelas proporcionais numa matriz, seu
 determinante será zero</li>
@@ -168,7 +168,7 @@ determinante será zero</li>
             <li><br>5. Se uma linha ou coluna for multiplicada por um escalar k, o determinante é multiplicado por k.</li>
             <li><br>6. Se multiplicamos toda uma matriz de ordem 𝑛 por 𝑘, o determinante da nova matriz ficará multiplicado por 𝑘ⁿ. 
             </li>
-            <li><br>7. Se uma linha ou coluna for movida o determinante muda o sinal</li>
+            <li><br>7. Se uma linha ou coluna for movida o determinante muda o sinal.</li>
             <li><br>8. Sendo A e B duas matrizes quadradas de mesma ordem e AB o seu
 produto, o determinante de AB será igual ao produto dos determinantes de
 A e B.
@@ -180,6 +180,8 @@ da diagonal principal. </li>
         <p>(JVL Concursos) Seja a matriz M, determine seu determinante.</p>
         <img src="imagens/ex4x41.png" alt="">
         <img src="imagens/ex4x43.jpg" alt="">
+
+        <h2>Questão 2</h2>
         <p><br>Determine o determinante da matriz D:</p>
         <img src="imagens/ex4x42.png" alt="">
         <img src="imagens/ex4x44.jpg" alt="">
