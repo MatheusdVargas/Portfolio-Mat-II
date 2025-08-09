@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginasCont.css">
+    <title>Matrizes</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="imagens/logo.png" alt="logo"></a>
+        <h1>Portfólio de Matemática</h1>
+        <a href="https://github.com/MatheusdVargas" target="_blank"><img id="github"
+                src="https://freepnglogo.com/images/all_img/github-logo-white-stroke-2a6c.png" alt="github"></a>
+    </header>
+    <section>
+        <div id="titulo">Sistemas Lineares 2x2</div>
+    </section>
+    <article>
+        <h2>O que é uma equação linear?</h2>
+        <p>Sistemas lineares são equações matemáticas que possuem 1 ou mais incógnitas, todas elas com expoente igual a 1. Por exemplo: </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mrow>
+                    <mn>2</mn>
+                    <mi>x</mi>
+                    <mo>+</mo>
+                    <mn>5</mn>
+                    <mi>y</mi>
+                    <mo>=</mo>
+                    <mn>18</mn>
+                </mrow>
+            </math>
+        </p>
+        <p>
+            Equações com 2 incógnitas resultam em uma função afim e equações com 3 incógnitas resultam em gráficos 3D.
+        </p>
+        <!-- <iframe src="https://www.geogebra.org/calculator/ngsrzvhg?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+        <iframe src="https://www.geogebra.org/3d/b7e6ehgw?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+         -->
+        
+        <h2>O que são sistemas lineares?</h2>
+        <p>
+            Sistemas lineares são a junção de 2 ou mais equações lineares com variáveis de mesmo valor.
+        </p>
+        <p>
+            Temos 3 tipos de sistemas lineares: <br>
+            Determinado: apresenta apenas um valor de interseção das retas. <br>
+            Indeterminado: as retas de cruzam em todos os pontos (estão sobrepostas). <br>
+            Impossível: as retas não se cruzam.
+        </p>
+        <h2>Como resolver sistemas de equações?</h2>
+        <p>Podemos resolvê-los por 2 métodos principais: substituição ou adição</p>
+        <h2>Método da substituição</h2>
+        <p>
+            O método da substituição é pegar uma das equações e isolar uma das incógnitas. Por exemplo: 
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow>
+                    <!-- Sistema de Equações -->
+                    <mtext>Sistema:</mtext>
+                    <mo>{</mo>
+                    <mtable>
+                    <mtr>
+                        <mtd>
+                        <mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>12</mn>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                        <mi>x</mi><mo>-</mo><mi>y</mi><mo>=</mo><mn>1</mn>
+                        </mtd>
+                    </mtr>
+                    </mtable>
+                </mrow>
+                <br>
+                <!-- Resolução pelo método da substituição -->
+                <mrow>
+                    <mtext>Resolução:</mtext>
+                </mrow>
+                
+                <!-- 1º Passo: isolar x na segunda equação -->
+                <mrow>
+                    <mtext>Isolando o x da equação 2:</mtext>
+                    <mspace width="0.5em"/>
+                    <mi>x</mi><mo>=</mo><mi>y</mi><mo>+</mo><mn>1</mn>
+                </mrow>
+                <br>
+                <!-- 2º Passo: substituir na primeira -->
+                <mrow>
+                    <mtext>Substituindo na primeira equação:</mtext>
+                </mrow>
+                <mrow>
+                    <mn>2</mn>
+                    <mo>(</mo><mi>y</mi><mo>+</mo><mn>1</mn><mo>)</mo>
+                    <mo>+</mo>
+                    <mn>3</mn><mi>y</mi>
+                    <mo>=</mo><mn>12</mn>
+                </mrow>
+                <br>
+                <mrow>
+                    <mtext>Assim temos:</mtext>
+                </mrow>
+                <mrow>
+                    <mi>y</mi><mo>=</mo><mn>2</mn>
+                </mrow>
+                <br>
+                <!-- 4º Passo: substituir y para encontrar x -->
+                <mrow>
+                    <mtext>Substituindo em</mtext>
+                    <mspace width="0.5em"/>
+                    <mi>x</mi><mo>=</mo><mi>y</mi><mo>+</mo><mn>1</mn>:
+                </mrow>
+                <mrow>
+                    <mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn>
+                </mrow>
+                <mrow>
+                    <mi>x</mi><mo>=</mo><mn>3</mn>
+                </mrow>
+                <br>
+                <!-- Resultado final -->
+                <mrow>
+                    <mtext>Solução em par ordenado (x, y):</mtext>
+                    <mspace width="0.5em"/>
+                    <mo>=</mo>
+                    <mo>(</mo><mn>3</mn><mo>,</mo><mn> 2</mn><mo>)</mo>
+                </mrow>
+                </math>
+    </p>
+    <h2>Método da Adição</h2>
+    <p>
+        Consiste em igualar o coeficiente de uma das incógnitas para poder cancelá-la com a outra equação. Normalmente multiplicamos a equação de cima ou de baixo por um numero que iguale as incógnitas e depois fazemos uma soma das duas equações. Por exemplo:
+    </p>
+    <p>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <!-- Sistema -->
+            <mrow>
+                <mtext>Sistema:</mtext>
+                <mo>{</mo>
+                <mtable>
+                <mtr>
+                    <mtd>
+                    <mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>12</mn>
+                    </mtd>
+                </mtr>
+                <mtr>
+                    <mtd>
+                    <mi>x</mi><mo>-</mo><mi>y</mi><mo>=</mo><mn>1</mn>
+                    </mtd>
+                </mtr>
+                </mtable>
+            </mrow>
+            <br>
+            <!-- Passo 1: igualar coeficientes de x -->
+            <mrow>
+                <mtext>Multiplicando a segunda equação por 2:</mtext>
+            </mrow>
+            <mrow>
+                <mn>2</mn><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>2</mn>
+            </mrow>
+            <br>
+            <!-- Passo 2: subtrair equações -->
+            <mrow>
+                <mtext>Subtraindo a segunda da primeira:</mtext>
+            </mrow>
+            <mrow>
+                <mo>(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>)</mo>
+                <mo>-</mo>
+                <mo>(</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi><mo>)</mo>
+                <mo>=</mo>
+                <mo>(</mo><mn>12</mn><mo>-</mo><mn>2</mn><mo>)</mo>
+            </mrow>
+            <mrow>
+                <mn>5</mn><mi>y</mi><mo>=</mo><mn>10</mn>
+            </mrow>
+            <mrow>
+                <mi>y</mi><mo>=</mo><mn>2</mn>
+            </mrow>
+            <br>
+            <!-- Passo 3: substituir y -->
+            <mrow>
+                <mtext>Substituindo na segunda equação original:</mtext>
+            </mrow>
+            <mrow>
+                <mi>x</mi><mo>-</mo><mn>2</mn><mo>=</mo><mn>1</mn>
+            </mrow>
+            <mrow>
+                <mi>x</mi><mo>=</mo><mn>3</mn>
+            </mrow>
+            <br>
+            <!-- Resultado -->
+            <mrow>
+                <mtext>Solução:</mtext>
+                <mo>(</mo><mn>3</mn><mo>,</mo><mn>2</mn><mo>)</mo>
+            </mrow>
+        </math>
+    </p>
+    <p>
+        Os dois exemplos acima são de sistemas com soluções SP (determinadas), mas podemos também ter sistemas SPI (indeterminados) e SI (Impossíveis). Podemos determinar de 2 formas o tipo de sistema.
+    </p>
+    <p>
+        Utilizando o determinante de uma matriz: colocar os coeficientes da equação em uma matriz e calcular seu determinante, se for igual a 0 pode ser SPI ou SI e se for diferente de 0 é SPD.
+    </p>
+    <p>
+        Realizando um dos métodos de rersolução (Adição ou substituição): Se ao fizermos a conta acharmos 0=0 o sistema é SPI, se acharmos numeros diferentes se igualando (como 0 = -11) o sistema é SI, caso o sistema for SPD não teremos dificuldades em resolvê-lo.
+    </p>
+    </article>
+</body>
+
+</html>

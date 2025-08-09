@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/paginasCont.css">
+    <link rel="stylesheet" href="styleCalc.css">
+    <title>Calculadora de matrizes</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="../imagens/logo.png" alt="logo"></a>
+        <h1>Portfólio de Matemática</h1>
+        <a href="https://github.com/MatheusdVargas" target="_blank"><img id="github"
+                src="https://freepnglogo.com/images/all_img/github-logo-white-stroke-2a6c.png" alt="github">
+        </a>
+    </header>
+    <article id="calculadora-container">
+    <h2>Calculadora de Matrizes</h2>
+    <p>Digite as matrizes (linhas separadas por ENTER e colunas por ESPAÇO):</p>
+
+    <div class="matriz-input-area">
+        <div>
+            <label for="matrizA">Matriz A:</label><br>
+            <textarea id="matrizA" rows="5" cols="20"></textarea>
+        </div>
+        <div>
+            <label for="matrizB">Matriz B (opcional):</label><br>
+            <textarea id="matrizB" rows="5" cols="20"></textarea>
+        </div>
+    </div>
+
+    <div>
+        <label for="operacao">Operação:</label>
+        <select id="operacao">
+            <option value="soma">Soma (A + B)</option>
+            <option value="subtracao">Subtração (A - B)</option>
+            <option value="multiplicacao">Multiplicação (A * B)</option>
+            <option value="escalar">Multiplicação por escalar</option>
+            <option value="transposta">Transpor A</option>
+            <option value="inversa">Inverter A</option>
+        </select>
+
+        <input type="number" id="escalar" placeholder="Escalar" style="display: none;">
+        <button onclick="calcularMatriz()">Calcular</button>
+    </div>
+
+    <div id="resultado"></div>
+    <a href="../conteudos2ano.html" class="link"><br>>>Voltar</a>
+</article>
+    <footer>
+        <h2>Contato</h2>
+        <p>E-mail: <a href="mailto:2024302557@aluno.erechim.ifrs.edu.br">2024302557@aluno.erechim.ifrs.edu.br</a></p>
+        <p>Telefone: (54) 9673-2076</p>
+        <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Campus Erechim</p>
+        <p>Desenvolvido por Matheus Vargas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

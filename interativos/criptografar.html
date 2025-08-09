@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Criptografia com Matriz Inversa</title>
+        <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/paginasCont.css">
+    <link rel="stylesheet" href="styleCalc.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="../imagens/logo.png" alt="logo"></a>
+        <h1>Portfólio de Matemática</h1>
+        <a href="https://github.com/MatheusdVargas" target="_blank"><img id="github"
+                src="https://freepnglogo.com/images/all_img/github-logo-white-stroke-2a6c.png" alt="github">
+        </a>
+    </header>
+    <article id="calculadora-container">
+        <h2>Criptografia com Matriz Inversa</h2>
+        <img src="../imagens/ordemDesc.png" alt="Ordem das Letras">
+        <div class="matriz-input-area">
+            <label for="texto">Digite a frase (somente letras, sem acentos):</label>
+            <textarea id="texto" placeholder="Ex: ola mundo"></textarea>
+        </div>
+        
+        <div class="matriz-input-area">
+           <label for="matrizChave">Digite a matriz chave (cada linha em uma linha, números separados por espaço):</label>
+            <textarea id="matrizChave" rows="4"></textarea> 
+        </div>
+        
+
+        <button onclick="criptografar()">Criptografar</button>
+
+        <h2>Texto Criptografado (matriz):</h2>
+        <pre id="resultado"></pre>
+        <div class="matriz-input-area">
+            <label for="matrizCriptografada">Para descriptografar, cole a matriz criptografada aqui (mesmo formato):</label>
+            <textarea id="matrizCriptografada" rows="4" placeholder="Ex:\n14 21\n5 12"></textarea>
+        </div>
+        
+        <button onclick="descriptografar()">Descriptografar</button>
+
+        <h2>Texto Decifrado:</h2>
+        <div id="decifrado"></div>
+        <a href="../conteudos2ano.html" class="link"><br>>>Voltar</a>
+    </article>
+    <footer>
+        <h2>Contato</h2>
+        <p>E-mail: <a href="mailto:2024302557@aluno.erechim.ifrs.edu.br">2024302557@aluno.erechim.ifrs.edu.br</a></p>
+        <p>Telefone: (54) 9673-2076</p>
+        <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Campus Erechim</p>
+        <p>Desenvolvido por Matheus Vargas</p>
+    </footer>
+    <script src="criptografia.js"></script>
+</body>
+
+</html>
