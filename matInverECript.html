@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginasCont.css">
+    <title>Matrizes Inversas e Criptografia</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="imagens/logo.png" alt="logo"></a>
+        <h1>Portfólio de Matemática</h1>
+        <a href="https://github.com/MatheusdVargas" target="_blank"><img id="github"
+                src="https://freepnglogo.com/images/all_img/github-logo-white-stroke-2a6c.png" alt="github"></a>
+    </header>
+    <section>
+        <div id="titulo">Matrizes Inversas e Criptografia</div>
+    </section>
+    <article>
+        <h2>O que são?</h2>
+        <p>
+            Matrizes inversas são matrizes que multiplicadas por uma matriz qualquer (A) resultam em sua matriz identidade. Como vimos anteriormente, no primeiro trimestre matrizes identidade são quadradas, logo nossa matriz A também deverá ser.
+        </p> <br>
+        <p>Assim:</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>A</mi>
+    <mo>&#x22C5;</mo> <!-- ponto de multiplicação · -->
+    <msup>
+      <mi>A</mi>
+      <mrow>
+        <mo>-</mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+    <mo>=</mo>
+    <mi>I</mi>
+  </mrow>
+</math>
+
+        </p>
+        <p>
+            Calcular uma matriz inversa é um tipo de sistema linear que depende do numero de linhas da matriz, isso faz com que as contas sejam extensas. Por isso, usamos as regras práticas para resolvermos matrizes inversas.
+        </p>
+        <h2>Regra prática matriz 2x2</h2>
+        <p>
+            Para resolvermos uma matriz inversa 2x2 fazemos os seguintes passos:
+            <ul>
+                <li>Calculamos o determinante da matriz (se for zero a matriz inversa não existe);</li>
+                <li>Trocamos de posição os elementos da diagonal principal;</li>
+                <li>Multiplicamos a diagonal secundária por -1;</li>
+                <li>Dividimos todos os elementos pelo determinante.</li>
+            </ul>
+        </p>
+        <p>Exemplificando:</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <!-- Matriz inicial A -->
+                <mrow>
+                    <mi>A</mi>
+                    <mo>=</mo>
+                    <mo>(</mo>
+                    <mtable>
+                    <mtr>
+                        <mtd><mi>A</mi></mtd>
+                        <mtd><mi>B</mi></mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd><mi>C</mi></mtd>
+                        <mtd><mi>D</mi></mtd>
+                    </mtr>
+                    </mtable>
+                    <mo>)</mo>
+                    <mo>,</mo>
+                    <mtext>determinante </mtext>
+                    <mi>(K), </mi>
+                </mrow>
+
+                <!-- Inversa distribuída -->
+                <mrow>
+                    <msup>
+                    <mi>A</mi>
+                    <mo>-1</mo>
+                    </msup>
+                    <mo>=</mo>
+                    <mo>(</mo>
+                    <mtable>
+                    <mtr>
+                        <mtd>
+                        <mfrac>
+                            <mi>D</mi>
+                            <mi>K</mi>
+                        </mfrac>
+                        </mtd>
+                        <mtd>
+                        <mfrac>
+                            <mrow><mo>-</mo><mi>B</mi></mrow>
+                            <mi>K</mi>
+                        </mfrac>
+                        </mtd>
+                    </mtr>
+                    <mtr>
+                        <mtd>
+                        <mfrac>
+                            <mrow><mo>-</mo><mi>C</mi></mrow>
+                            <mi>K</mi>
+                        </mfrac>
+                        </mtd>
+                        <mtd>
+                        <mfrac>
+                            <mi>A</mi>
+                            <mi>K</mi>
+                        </mfrac>
+                        </mtd>
+                    </mtr>
+                    </mtable>
+                    <mo>)</mo>
+                </mrow>
+            </math>
+
+
+        </p>
+        <h2>Regra prática 3x3</h2>
+        <p>
+            Para conseguirmos resolver uma matriz inversa 3x3 devemos realizar os seguintes passos:
+            <ul>
+                <li>Calcular o determinante (Se for 0 não há matriz inversa);</li>
+                <li>Repetir as duas primeiras colunas da matriz á direita;</li>
+                <li>Repetir as duas primeiras linhas da matriz em baixo;</li>
+                <li>Cortar a primeira linha e a primeira coluna;</li>
+                <li>Separar os elementos dentro dessa nova matriz como matrizes 2x2 e calcular seus determinantes;</li>
+                <li>Colocar os determinantes em uma nova matriz 3x3 (de cima para baixo);</li>
+                <li>Dividir essa matriz pelo determinante da original.</li>
+            </ul>
+            
+        </p>
+        <p>
+            Por exemplo: 
+        </p>
+        <img src="imagens/Ex01MI3x3.jpg" alt="">
+        <h2>Criptografia</h2>
+        <p>
+            Com os conceitos de matriz inversa podemos criar frases criptografadas, basta transformarmos as letras em números (usando uma tabela de conversão) e multiplicarmos esses numeros pela matriz A. Para descriptografar fazemos a matriz inversa de A vezes os números. Porém, existe um problema, a matriz dos numeros criptografados pode ter uma quantidade ímpar de elementos, quando isso acontece colocamos um ponto ou um espaço no fim da matriz para conseguirmos resolvê-la.
+        </p> <br>
+        <p>Fórmula: M = mensagem, A = matriz, N = letras tranformadas em números.</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>M</mi>
+    <mo>=</mo>
+    <msup>
+      <mi>A</mi>
+      <mo>-1</mo>
+    </msup>
+    <mi>N</mi>
+  </mrow>
+</math>
+
+        </p>
+        <h2>Questões</h2>
+        
+        <a href="sistLineares3x3.html" class="link"><br>>>Proximo Conteúdo</a>
+        <a href="conteudos2ano.html" class="link"><br>>>Página de Conteúdos</a>
+    </article>
+</body>
+
+</html>
