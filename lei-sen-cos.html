@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginasCont.css">
+    <title>Graus e Radianos</title>
+    <style>
+        #calcContainer {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 1px 1px 5px #00000066;
+        }
+
+        #calcContainer h3 {
+            color: white;
+            font-size: 1.9rem;
+            margin-bottom: 10px;
+        }
+
+        #calcContainer p {
+            color: whitesmoke;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        /* Labels */
+        #calcContainer label {
+            display: block;
+            color: whitesmoke;
+            font-size: 1.4rem;
+            margin-top: 12px;
+            text-align: left;
+        }
+
+        /* Inputs da calculadora */
+        #calcContainer input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.4rem;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: none;
+            background-color: #ffffffdd;
+            box-shadow: inset 1px 1px 4px #00000055;
+        }
+
+        #calcContainer input:focus {
+            outline: 2px solid #ffffffaa;
+        }
+
+        /* Botões */
+        #calcContainer button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #ffffffcc;
+            color: #000;
+            transition: 0.2s;
+            box-shadow: 1px 1px 5px #00000077;
+        }
+
+        #calcContainer button:hover {
+            background-color: #ffffff;
+            transform: scale(1.02);
+        }
+
+        /* Linha divisória */
+        #calcContainer hr {
+            border: none;
+            height: 1px;
+            background-color: #ffffff55;
+            margin: 25px 0;
+        }
+
+        /* Resultado */
+        #resultadoSeno,
+        #resultadoCosseno {
+            margin-top: 10px;
+            color: #b0ffd2;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="imagens/logo.png" alt="logo"></a>
+        <h1>Portfólio de Matemática</h1>
+        <a href="https://github.com/MatheusdVargas" target="_blank"><img id="github"
+                src="https://freepnglogo.com/images/all_img/github-logo-white-stroke-2a6c.png" alt="github"></a>
+    </header>
+    <section>
+        <div id="titulo">Graus e radianos</div>
+    </section>
+    <article>
+        <h2>O que é a lei dos senos?</h2>
+        <p>
+            A lei dos senos é uma forma de comparar medidas e ângulos opostos de um retangulo qualquer, a fim de
+            descobrir uma medida ou ângulo. Usamos a lei dos senos quando temos 2 medidas e 2 ângulos.
+        </p>
+        <img src="https://static.todamateria.com.br/upload/1l/ei/1_lei_dos_senos_vcc.jpg" alt="Lei dos Senos">
+        <p>Fonte: <a href="https://www.todamateria.com.br/lei-dos-senos/" class="link" target="_blank">Toda Matéria</a>
+        </p> <br>
+        <p>
+            É bem simples, basta pegarmos a medida que queremos e comparar com o seno do ângulo de lado contrário a
+            medida, depois disso achamos outra medida e comparamos essa medida ao ângulo contrário, como pode ser visto
+            na imagem.
+        </p>
+        <h2>Lei dos Cossenos</h2>
+        <p>
+            A lei dos Cossenos por outro lado é uma forma de calcularmos ângulos ou medidas quando temos 3 medidas e 1
+            ângulo
+            Ela funciona da seguinte forma:
+        </p>
+        <img src="https://vestibulares.estrategia.com/portal/wp-content/uploads/2025/07/lei-dos-cossenos-1.png"
+            alt="Lei dos cossenos"> <br>
+        <p>Fonte: <a
+                href="https://vestibulares.estrategia.com/portal/materias/matematica/lei-dos-cossenos-definicao-formula-aplicacoes-e-questoes/"
+                class="link" target="_blank">Estratégia Vestibulares</a></p> <br>
+        <p>
+            Eu decorei essa formula como:
+        <ul>
+            <li>A medida que queremos achar</li>
+            <li>=</li>
+            <li>A soma dos quadrados das outras duas medidas</li>
+            <li>Menos 2 vezes as outras medidas</li>
+            <li>Vezes o cosseno do angulo oposto a medida que queremos achar</li>
+        </ul>
+        </p>
+        <a href="cicloTrig.html" class="link"><br>>>Proximo Conteúdo</a>
+        <a href="conteudos2ano.html" class="link"><br>>>Página de Conteúdos</a>
+    </article>
+    <article>
+        <h2>Calculadora – Lei dos Senos e Lei dos Cossenos</h2>
+        <p>
+            Deixe em branco o input que deseja descobrir
+        </p>
+        <div id="calcContainer">
+            <h3>Lei dos Senos</h3>
+
+            <label>Lado 1 (a):</label>
+            <input type="number" id="a"><br>
+
+            <label>Ângulo oposto a (A):</label>
+            <input type="number" id="A"><br>
+
+            <label>Lado 2 (b):</label>
+            <input type="number" id="b"><br>
+
+            <label>Ângulo oposto a (B):</label>
+            <input type="number" id="B"><br>
+
+            <button onclick="calcularSeno()">Calcular</button>
+
+            <p id="resultadoSeno"></p>
+
+            <hr>
+
+            <h3>Lei dos Cossenos</h3>
+
+            <label>Lado 1 (a):</label>
+            <input type="number" id="lc_a"><br>
+
+            <label>Lado 2 (b):</label>
+            <input type="number" id="lc_b"><br>
+
+            <label>Lado 3 (c):</label>
+            <input type="number" id="lc_c"><br>
+
+            <label>Ângulo entre a e b (C) em graus:</label>
+            <input type="number" id="lc_C"><br>
+
+            <button onclick="calcularCosseno()">Calcular (Lei dos Cossenos)</button>
+
+            <p id="resultadoCosseno"></p>
+        </div>
+    </article>
+    <br><br>
+    <script>
+        // -------------------------------
+        // LEI DOS SENOS
+        // -------------------------------
+        function calcularSeno() {
+            const a = parseFloat(document.getElementById("a").value);
+            const A = parseFloat(document.getElementById("A").value);
+            const b = parseFloat(document.getElementById("b").value);
+            const B = parseFloat(document.getElementById("B").value);
+
+            // Converte graus → radianos
+            const rad = x => x * Math.PI / 180;
+
+            let resultado = "";
+
+            // Se a estiver vazio → calcular a
+            if (isNaN(a) && !isNaN(A) && !isNaN(b) && !isNaN(B)) {
+                const valor = (b * Math.sin(rad(A))) / Math.sin(rad(B));
+                resultado = `a = ${valor.toFixed(3)}`;
+            }
+            // Se A estiver vazio → calcular A
+            else if (isNaN(A) && !isNaN(a) && !isNaN(b) && !isNaN(B)) {
+                const valor = Math.asin((a * Math.sin(rad(B))) / b) * (180 / Math.PI);
+                resultado = `A = ${valor.toFixed(3)}°`;
+            }
+            // Se b estiver vazio → calcular b
+            else if (isNaN(b) && !isNaN(a) && !isNaN(A) && !isNaN(B)) {
+                const valor = (a * Math.sin(rad(B))) / Math.sin(rad(A));
+                resultado = `b = ${valor.toFixed(3)}`;
+            }
+            // Se B estiver vazio → calcular B
+            else if (isNaN(B) && !isNaN(a) && !isNaN(A) && !isNaN(b)) {
+                const valor = Math.asin((b * Math.sin(rad(A))) / a) * (180 / Math.PI);
+                resultado = `B = ${valor.toFixed(3)}°`;
+            }
+            else {
+                resultado = "Preencha exatamente UM campo em branco.";
+            }
+
+            document.getElementById("resultadoSeno").innerHTML = resultado;
+        }
+
+
+
+        // -------------------------------
+        // LEI DOS COSSENOS
+        // -------------------------------
+        function calcularCosseno() {
+            const a = parseFloat(document.getElementById("lc_a").value);
+            const b = parseFloat(document.getElementById("lc_b").value);
+            const c = parseFloat(document.getElementById("lc_c").value);
+            const C = parseFloat(document.getElementById("lc_C").value);
+
+            const rad = x => x * Math.PI / 180;
+
+            let resultado = "";
+
+            // -------------------------------
+            // 1) Calcular c (lado faltando)
+            // Fórmula: c² = a² + b² - 2ab cos(C)
+            // -------------------------------
+            if (isNaN(c) && !isNaN(a) && !isNaN(b) && !isNaN(C)) {
+                const valor = Math.sqrt(a * a + b * b - 2 * a * b * Math.cos(rad(C)));
+                resultado = `c = ${valor.toFixed(3)}`;
+            }
+
+            // -------------------------------
+            // 2) Calcular C (ângulo faltando)
+            // Fórmula inversa: 
+            // cos(C) = (a² + b² - c²) / (2ab)
+            // -------------------------------
+            else if (isNaN(C) && !isNaN(a) && !isNaN(b) && !isNaN(c)) {
+                const valor = Math.acos((a * a + b * b - c * c) / (2 * a * b)) * (180 / Math.PI);
+                resultado = `C = ${valor.toFixed(3)}°`;
+            }
+
+            // -------------------------------
+            // 3) Calcular a (lado faltando)
+            // -------------------------------
+            else if (isNaN(a) && !isNaN(b) && !isNaN(c) && !isNaN(C)) {
+                const valor = Math.sqrt(b * b + c * c - 2 * b * c * Math.cos(rad(C)));
+                resultado = `a = ${valor.toFixed(3)}`;
+            }
+
+            // -------------------------------
+            // 4) Calcular b (lado faltando)
+            // -------------------------------
+            else if (isNaN(b) && !isNaN(a) && !isNaN(c) && !isNaN(C)) {
+                const valor = Math.sqrt(a * a + c * c - 2 * a * c * Math.cos(rad(C)));
+                resultado = `b = ${valor.toFixed(3)}`;
+            }
+
+            else {
+                resultado = "Preencha exatamente UM campo em branco.";
+            }
+
+            document.getElementById("resultadoCosseno").innerHTML = resultado;
+        }
+
+    </script>
+
+</body>
+
+</html>

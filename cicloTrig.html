@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paginasCont.css">
+    <title>Ciclo Trignonométrico</title>
+    <style>
+        #calcContainer {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 1px 1px 5px #00000066;
+        }
+
+        #calcContainer h3 {
+            color: white;
+            font-size: 1.9rem;
+            margin-bottom: 10px;
+        }
+
+        #calcContainer p {
+            color: whitesmoke;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        /* Labels */
+        #calcContainer label {
+            display: block;
+            color: whitesmoke;
+            font-size: 1.4rem;
+            margin-top: 12px;
+            text-align: left;
+        }
+
+        /* Inputs da calculadora */
+        #calcContainer input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.4rem;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: none;
+            background-color: #ffffffdd;
+            box-shadow: inset 1px 1px 4px #00000055;
+        }
+        #calcContainer button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #ffffffcc;
+            color: #000;
+            transition: 0.2s;
+            box-shadow: 1px 1px 5px #00000077;
+        }
+        #calcContainer select.calcInput {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.4rem;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: none;
+            background-color: #ffffffdd;
+            box-shadow: inset 1px 1px 4px #00000055;
+        }
+
+        #calcContainer select.calcInput:focus {
+            outline: 2px solid #ffffffaa;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="imagens/logo.png" alt="logo"></a>
+        <h1>Portfólio de Matemática</h1>
+        <a href="https://github.com/MatheusdVargas" target="_blank"><img id="github"
+                src="https://freepnglogo.com/images/all_img/github-logo-white-stroke-2a6c.png" alt="github"></a>
+    </header>
+    <section>
+        <div id="titulo">Ciclo Trigonométrico</div>
+    </section>
+    <article>
+        <h2>O que é?</h2>
+        <p>
+            O Ciclo trigonométrico é uma forma de representar graficamente onde estariam os senos e os cossenos de um
+            ângulo inse
+            rido em um círculo.
+        </p> <br>
+        <!-- <iframe src="https://www.geogebra.org/classic/krs4rvat?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe> -->
+        <p>
+            Desenvolvido por: FELIPE CARDOSO DOS ANJOS - <a href="https://www.geogebra.org/m/krs4rvat" class="link"
+                target="_blank">Link do Geogebra</a>
+        </p>
+        <h2>Arcos Cóngruos</h2>
+        <p>
+            Dizemos que dois arcos são <strong>cóngruos</strong> quando terminam exatamente no mesmo ponto do ciclo,
+            mesmo que um dê mais voltas do que o outro.
+            Por exemplo: 150° e 510° (que é 360° + 150°) chegam na mesma extremidade.
+        </p>
+        <img src="imagens/congruo.png" alt="Angulos congruos">
+        <p>Imagem retirada do material didático da professora Valéria Espíndola Lessa.</p> <br>
+        <p>
+            A expressão geral para um arco côngruo é:
+            <br>
+            <strong>α + 360°·k</strong> &nbsp; ou &nbsp; <strong>α + 2π·k</strong> &nbsp; (com k ∈ ℤ)
+        </p>
+
+        <h2>1ª Determinação Positiva</h2>
+        <p>
+            Quando temos um ângulo muito grande (como 1340°) ou um ângulo negativo, fica difícil
+            saber onde exatamente ele cai no ciclo.
+            Para descobrir, fazemos a redução módulo 360° (ou módulo 2π).
+        </p>
+
+        <p>
+            Exemplo:
+            1340° ÷ 360° = 3 voltas completas e sobra 260°.
+            Logo, <strong>1ª determinação positiva = 260°</strong>, e o arco está no 3º quadrante.
+        </p>
+
+        <p>
+            Em radianos, fazemos o mesmo raciocínio usando múltiplos de 2π.
+            Ex.:
+            28π/5 = 2 voltas completas + 8π/5
+            → <strong>1ª determinação positiva = 8π/5</strong>.
+        </p>
+
+        <h2>Semelhança no Ciclo</h2>
+        <p>
+            Alguns arcos possuem posições “espelhadas” no ciclo. Isso acontece quando os pontos
+            finais estão simetricamente localizados em relação ao eixo x, ao eixo y ou à origem.
+        </p>
+        <img src="imagens/simetrico.png" alt="Angulos simetricos">
+        <p>Imagem retirada do material didático da professora Valéria Espíndola Lessa.</p> <br>
+        <p>
+            Essa simetria permite calcular outros arcos relacionados:
+            <br>• 180° – α
+            <br>• 180° + α
+            <br>• 360° – α
+        </p>
+
+        <p>
+            Por exemplo, se um arco termina 20° acima do eixo x, os pontos simétricos estarão:
+        </p>
+        <ul>
+            <li>A = 180° – 20° = 160°</li>
+            <li>B = 180° + 20° = 200°</li>
+            <li>C = 360° – 20° = 340°</li>
+        </ul>
+        <a href="eq-trig.html" class="link"><br>>>Proximo Conteúdo</a>
+        <a href="conteudos2ano.html" class="link"><br>>>Página de Conteúdos</a>
+    </article>
+    <article>
+        <div id="calcContainer">
+            <h3>Calculadora de Arcos no Ciclo Trigonométrico</h3>
+
+            <p>
+                Escolha o tipo de operação desejada, insira o ângulo e clique em "Calcular".
+                O script determina o menor ângulo côngruo, a 1ª determinação positiva ou os ângulos simétricos.
+            </p>
+
+            <label for="tipoCalculo"><strong>Tipo de cálculo:</strong></label>
+            <select id="tipoCalculo" class="calcInput">
+                <option value="congruo">Menor ângulo côngruo</option>
+                <option value="positiva">1ª determinação positiva</option>
+                <option value="simetricos">Ângulos simétricos</option>
+            </select>
+
+            <label for="angulo"><strong>Digite o ângulo (em graus):</strong></label>
+            <input type="number" id="angulo" placeholder="Ex: 1340">
+
+            <button id="calcular">Calcular</button>
+
+            <hr>
+
+            <h3>Resultado:</h3>
+            <div id="resultadoSeno"></div>
+            <div id="resultadoCosseno"></div>
+        </div>
+    </article>
+
+
+    <script>
+        function primeiraDetPositiva(ang) {
+            let r = ang % 360;
+            if (r < 0) r += 360;
+            return r;
+        }
+
+        function menorCongruo(ang) {
+            let r = ang % 360;
+            if (r > 180) r -= 360;
+            if (r < -180) r += 360;
+            return r;
+        }
+
+        function angulosSimetricos(ang) {
+            return {
+                cima: 180 - ang,
+                baixo: 180 + ang,
+                direita: 360 - ang
+            };
+        }
+
+        document.getElementById("calcular").addEventListener("click", () => {
+            const tipo = document.getElementById("tipoCalculo").value;
+            const angulo = Number(document.getElementById("angulo").value);
+
+            const res1 = document.getElementById("resultadoSeno");
+            const res2 = document.getElementById("resultadoCosseno");
+
+            if (isNaN(angulo)) {
+                res1.innerHTML = "Por favor, digite um valor válido.";
+                res2.innerHTML = "";
+                return;
+            }
+
+            if (tipo === "positiva") {
+                const r = primeiraDetPositiva(angulo);
+                res1.innerHTML = `A 1ª determinação positiva é: <strong>${r}°</strong>`;
+                res2.innerHTML = "";
+
+            } else if (tipo === "congruo") {
+                const r = menorCongruo(angulo);
+                res1.innerHTML = `O menor ângulo côngruo é: <strong>${r}°</strong>`;
+                res2.innerHTML = "";
+
+            } else if (tipo === "simetricos") {
+                const r = angulosSimetricos(angulo);
+                res1.innerHTML = `Ângulos simétricos:<br>
+                • 180° - α = <strong>${r.cima}°</strong><br>
+                • 180° + α = <strong>${r.baixo}°</strong>`;
+
+                res2.innerHTML = `• 360° - α = <strong>${r.direita}°</strong>`;
+            }
+        });
+    </script>
+</body>
+
+</html>
