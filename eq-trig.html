@@ -11,7 +11,6 @@
     <title>Equações Trigonométricas</title>
 
     <style>
-        /* reaproveitando seu estilo interno */
         #calcContainer {
             margin-top: 20px;
             background-color: rgba(255, 255, 255, 0.05);
@@ -23,17 +22,73 @@
             box-shadow: 1px 1px 5px #00000066;
         }
 
+        /* TÍTULOS DO CONTAINER */
         #calcContainer h3 {
             color: white;
             font-size: 1.9rem;
             margin-bottom: 10px;
         }
 
+        /* TEXTOS */
         #calcContainer p {
             color: whitesmoke;
             font-size: 1.4rem;
             margin-bottom: 10px;
             text-align: justify;
+        }
+
+        /* LABELS */
+        #calcContainer label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: white;
+            font-size: 1.4rem;
+        }
+
+        /* INPUTS E SELECTS */
+        #calcContainer input,
+        #calcContainer select {
+            width: 95%;
+            padding: 10px;
+            font-size: 1.3rem;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            background-color: #ffffffdd;
+            margin-bottom: 10px;
+        }
+
+        /* BOTÃO PRINCIPAL */
+        #calcContainer button {
+            margin-top: 15px;
+            width: 95%;
+            padding: 12px;
+            background-color: #2f73ff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            box-shadow: 1px 1px 4px #00000066;
+            transition: 0.3s;
+        }
+
+        #calcContainer button:hover {
+            background-color: #1a56c9;
+        }
+
+        /* CANVAS DO GRÁFICO */
+        #grafico {
+            margin-top: 20px;
+            width: 95%;
+            height: auto;
+            max-width: 600px;
+            border: 1px solid #ffffff55;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.03);
+            box-shadow: 1px 1px 10px #00000055;
         }
     </style>
 </head>
@@ -132,9 +187,11 @@
         </p>
 
         <h2>Função Seno</h2>
-        <iframe src="https://www.geogebra.org/calculator/w72hajtf?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+        <iframe src="https://www.geogebra.org/calculator/w72hajtf?embed&toolbar=false" width="800" height="600"
+            allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
         <p>
-            A função do seno é caracterizada por uma curva crescente e decrescente sem pontas, como uma onda. Ela começa no 0 e cresce até o 1, volta para o 0 e vai até o -1, retornando ao zero e repetindo o ciclo. 
+            A função do seno é caracterizada por uma curva crescente e decrescente sem pontas, como uma onda. Ela começa
+            no 0 e cresce até o 1, volta para o 0 e vai até o -1, retornando ao zero e repetindo o ciclo.
         </p> <br>
         <p>
             Forma Básica: f(x) = sen(x)
@@ -144,9 +201,11 @@
         </p>
 
         <h2>Função Cosseno</h2>
-        <iframe src="https://www.geogebra.org/calculator/wqeqywxy?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+        <iframe src="https://www.geogebra.org/calculator/wqeqywxy?embed&toolbar=false" width="800" height="600"
+            allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
         <p>
-            A função do cosseno, assim como a do seno é uma onda, mas o seno começa em 1, desce até 0, depois até -1, até 0 novamente e volta ao 1, repetindo o ciclo
+            A função do cosseno, assim como a do seno é uma onda, mas o seno começa em 1, desce até 0, depois até -1,
+            até 0 novamente e volta ao 1, repetindo o ciclo
         </p> <br>
         <p>
             Forma Básica: f(x) = cos(x)
@@ -156,10 +215,13 @@
         </p>
 
         <h2>Função Tangente</h2>
-        <iframe src="https://www.geogebra.org/calculator/sp3jvurq?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+        <iframe src="https://www.geogebra.org/calculator/sp3jvurq?embed&toolbar=false" width="800" height="600"
+            allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
         <p>
-            A função tangente é bem diferente das outras, ela é caracterizada como uma linha que possui uma curvatura perto do eixo x mas sobre quase reto para cima conforme de afasta do eixo x.
-            Essa função possui assíntotas verticais que são pontos onde a função não possui valor porque o ângulo cria uma linha paralela a linha da tangente no círculo. Esses pontos podem ser calculados
+            A função tangente é bem diferente das outras, ela é caracterizada como uma linha que possui uma curvatura
+            perto do eixo x mas sobre quase reto para cima conforme de afasta do eixo x.
+            Essa função possui assíntotas verticais que são pontos onde a função não possui valor porque o ângulo cria
+            uma linha paralela a linha da tangente no círculo. Esses pontos podem ser calculados
             no domínio da função.
         </p>
         <p>
@@ -170,9 +232,14 @@
         </p>
 
         <h2>Transformações Senoidais</h2>
-        <iframe src="https://www.geogebra.org/calculator/rvsnzfna?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
-        <p>O gráfico está com algum problema para aparecer, mas ele pode ser acessado pelo link:</p>
-        <p><a href="https://www.geogebra.org/calculator/rvsnzfna" class="link" target="_blank">https://www.geogebra.org/calculator/rvsnzfna</a></p>
+        <iframe src="https://www.geogebra.org/calculator/rvsnzfna?embed&toolbar=false" width="800" height="600"
+            allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+        <p>
+            Desenvolvido por: Matheus de Vargas - <a href="https://www.geogebra.org/calculator/rvsnzfna" class="link"
+                target="_blank">Link do Geogebra</a>
+        </p>
+        <p>O gráfico está com algum problema para aparecer, mas ele pode ser acessado pelo link acima.</p>
+
         <p>
             As funções podem assumir a forma:
             <br>
@@ -193,10 +260,140 @@
             O mesmo vale para <strong>cos(x)</strong>.
         </p>
 
-        <a href="func-trig.html" class="link">>> Próximo Conteúdo</a>
+        <a href="autoaval3.html" class="link">>> Autoavaliação</a>
         <br>
         <a href="conteudos2ano.html" class="link">>> Página de Conteúdos</a>
     </article>
+    <article>
+        <div id="calcContainer">
+            <h3>Calculadora de Funções Trigonométricas com Gráfico</h3>
+
+            <p>
+                Ainda está em desenvolvimento, mas funciona com funções básicas! <br>
+                Digite uma função trigonométrica em termos de <strong>x</strong>
+                (use sin(x), cos(x), tan(x), etc.) e o intervalo desejado para plotar o gráfico.
+                Utilize * para multiplicações.
+            </p>
+
+            <label><strong>Função trigonométrica:</strong></label>
+            <input type="text" id="funcao" placeholder="Ex: sin(x), 2*cos(x), sin(x)+cos(x)">
+
+            <label><strong>Início do intervalo (°):</strong></label>
+            <input type="number" id="inicio" value="-360">
+
+            <label><strong>Fim do intervalo (°):</strong></label>
+            <input type="number" id="fim" value="360">
+
+            <button id="plotar">Gerar Gráfico</button>
+
+            <hr>
+
+            <canvas id="grafico" width="600" height="300" style="border:1px solid #000; margin-top:20px;"></canvas>
+        </div>
+    </article>
+
+    <script>
+
+        function rad(graus) {
+            return graus * Math.PI / 180;
+        }
+
+        function interpretarFuncao(fnString) {
+            // substitui sin, cos, tan por Math.sin etc.
+            return fnString
+                .replace(/sin/gi, "Math.sin")
+                .replace(/cos/gi, "Math.cos")
+                .replace(/tan/gi, "Math.tan");
+        }
+
+        document.getElementById("plotar").addEventListener("click", () => {
+
+            const funcaoInput = document.getElementById("funcao").value;
+            const inicio = Number(document.getElementById("inicio").value);
+            const fim = Number(document.getElementById("fim").value);
+
+            if (!funcaoInput) {
+                alert("Digite uma função trigonométrica.");
+                return;
+            }
+
+            const canvas = document.getElementById("grafico");
+            const ctx = canvas.getContext("2d");
+
+            // limpa o gráfico anterior
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // traduz função para JavaScript
+            const fstr = interpretarFuncao(funcaoInput);
+            let f;
+            try {
+                f = new Function("x", `return ${fstr};`);
+            } catch {
+                alert("Função inválida.");
+                return;
+            }
+
+            // valores para conversão de coordenadas
+            const largura = canvas.width;
+            const altura = canvas.height;
+
+            const margem = 20;
+            const escalaX = largura / (fim - inicio);
+
+            // tenta descobrir o valor máximo para ajustar a escala vertical
+            let maxAbs = 1;
+            for (let g = inicio; g <= fim; g += 1) {
+                let y = f(rad(g));
+                if (!isNaN(y)) maxAbs = Math.max(maxAbs, Math.abs(y));
+            }
+
+            const escalaY = (altura / 2 - margem) / maxAbs;
+
+            // desenhar eixos
+            ctx.strokeStyle = "#000";
+            ctx.beginPath();
+
+            // eixo X
+            const eixoX = altura / 2;
+            ctx.moveTo(0, eixoX);
+            ctx.lineTo(largura, eixoX);
+
+            // eixo Y
+            const eixoY = (0 - inicio) * escalaX;
+            ctx.moveTo(eixoY, 0);
+            ctx.lineTo(eixoY, altura);
+
+            ctx.stroke();
+
+            // desenhar o gráfico
+            ctx.strokeStyle = "red";
+            ctx.beginPath();
+
+            let iniciado = false;
+
+            for (let g = inicio; g <= fim; g += 1) {
+
+                let y = f(rad(g));
+                if (isNaN(y) || y === Infinity || y === -Infinity) {
+                    iniciado = false;
+                    continue;
+                }
+
+                const px = (g - inicio) * escalaX;
+                const py = eixoX - y * escalaY;
+
+                if (!iniciado) {
+                    ctx.moveTo(px, py);
+                    iniciado = true;
+                } else {
+                    ctx.lineTo(px, py);
+                }
+            }
+
+            ctx.stroke();
+        });
+
+    </script>
 
 </body>
 
